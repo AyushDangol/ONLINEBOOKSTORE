@@ -1,0 +1,14 @@
+.card {
+  &-services {
+    .img {
+      border-radius: 1.25rem 1.25rem 0 0;
+    }
+    .card {
+      &-body {
+        padding: 2rem;
+        background-color: #fff;
+        border-radius: 0 0 1.25rem 1.25rem;
+      }
+    }
+  }
+}
