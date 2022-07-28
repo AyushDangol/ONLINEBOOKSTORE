@@ -11,4 +11,22 @@
       }
     }
   }
+  &-01 {
+    background-color: white;
+    .media-wrapper {
+      height: 260px;
+    }
+
+    .card {
+      &-content {
+        padding: 1.5rem;
+        h5 {
+          margin-bottom: 12px;
+        }
+        p {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
 }
