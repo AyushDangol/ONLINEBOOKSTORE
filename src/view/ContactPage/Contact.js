@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import img6 from "../../assets/image/img6.jpg";
 import img7 from "../../assets/image/img7.jpg";
 import img8 from "../../assets/image/img8.jpg";
+import { ProductCard } from "../../components/Card";
 
 export default function Contact() {
   const serviceData = [
@@ -42,19 +43,10 @@ export default function Contact() {
       <div className="container">
         <div className="row">
           {serviceData.map((item) => {
+            let { img, title, desc } = item;
             return (
               <div className="col-4">
-                <div className="card-01">
-                  <div className="media-wrapper">
-                    <img src={item.img} alt="" />
-                  </div>
-                  <div className="card-content">
-                    <h5>{item.title}</h5>
-                    <p>{item.desc}</p>
-                    <h6>2079/04/16</h6>
-                    <a href="#">Learn More</a>
-                  </div>
-                </div>
+                <ProductCard img={img} title={title} desc={desc} />
               </div>
             );
           })}

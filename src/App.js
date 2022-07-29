@@ -3,6 +3,7 @@ import Header from "./components/Layout/Header";
 import Home from "./view/HomePage/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contact from "./view/ContactPage/Contact";
+import Products from "./view/ProductPage/Products";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         {/* <Route element={<App />}> */}
         <Route path="/" element={<Home />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="products" element={<Products />} />
         {/* </Route> */}
       </Routes>
       <button type="button" class="btn btn-primary">

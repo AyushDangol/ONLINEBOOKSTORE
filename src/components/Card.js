@@ -35,3 +35,20 @@ export function TtestimonyCard(props) {
     </div>
   );
 }
+
+export function ProductCard(props) {
+  let { title, desc, img } = props;
+
+  return (
+    <div className="card-01">
+      <div className="media-wrapper">
+        <img src={img} alt="" />
+      </div>
+      <div className="card-content">
+        <h5>{title}</h5>
+        <p>{desc}</p>
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+  );
+}
